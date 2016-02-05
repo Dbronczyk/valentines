@@ -1,0 +1,649 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: #226e8c;
+        background: url("../img/pink_bg.jpg") repeat center center;
+}
+
+body, portfolio {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.Page_Social {
+  position: fixed;
+  top: 10px;
+  right: 10px; 
+  z-index: 101;
+}
+
+#TopBar {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+  top: 0px;
+  z-index: 100;
+  background: url("../img/pink_bg.jpg") repeat center center;
+  -webkit-box-shadow: 0px 6px 72px -11px rgba(0,0,0,1);
+-moz-box-shadow: 0px 6px 72px -11px rgba(0,0,0,1);
+box-shadow: 0px 6px 72px -11px rgba(0,0,0,1);
+  padding:  5px 0}
+
+@media (max-width: 992px) and (orientation : portrait) {
+    #TopBar {
+	left:  0;
+	text-align: left;
+    }
+    #TopBar img{
+      width: 60%;
+      padding: 10px 5px;
+      float: left;
+      }
+
+}
+
+
+
+
+
+
+
+
+.snow_controls {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 101;
+  color: #FFFFFF;
+  font-family: 'Marcellus SC', serif;
+}
+.snow_controls a {
+  display: block;
+  font-size: 18px;
+  float: left;
+  color: #FFFFFF;
+  }
+
+.snow_controls a, .snow_controls h4 {
+  float: left;
+  margin: 0 5px;
+}
+
+.header {
+
+    -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+.header .arrow {
+ position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 101%;
+    font-size: 55px;
+  color: #DC3B3E;
+}
+
+@media (max-width: 992px)  {
+    .header .arrow {
+ position: absolute;
+    text-align: center;
+    bottom: 10px;
+    top: auto;
+    display: block;
+    width: 100%;
+}
+
+}
+
+
+
+.text-vertical-center {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+     height: 100%;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.text-vertical-center img {
+    box-shadow: none;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#TitlePic {
+    max-width: 90%;
+    padding: 0 5%;
+    max-height: 98%;
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/* Header */
+
+.header {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+/* Portfolio */
+
+.portfolio {
+    padding: 50px 0;
+    padding-bottom: 35px;
+}
+
+.portfolio-item {
+    margin-bottom: 0px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+}
+
+
+
+/* Call to Action */
+
+.call-to-action {
+    padding: 50px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+
+#portfolio .container {
+    width: 100% !important;
+ 
+}
+
+@media (min-width: 1200px){
+  #portfolio .container {
+    width: 100% !important;
+  }
+  
+}
+
+
+/* Footer */
+
+footer {
+    padding: 10px 0;
+
+    text-align: center;
+}
+
+
+
+footer img {
+    max-width:  100%;
+}
+
+
+
+footer {
+
+  background: url("../img/footer_bg.png") no-repeat bottom center;
+    -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+      padding-top: 100px;
+}
+
+@media (max-width: 992px) and (orientation : portrait) {
+    footer {
+      padding-top: 0px;
+    }
+    
+    .portfolio {
+    padding-bottom: 0;
+  }
+  
+  .page-header {
+
+    margin: 0px 0 20px;
+  }
+}
+
+
+/*==================================================
+ * Effect 7
+ * ===============================================*/
+.img-responsive
+{
+  	position:relative;       
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	margin: 0 auto;
+
+}
+
+.WordLove:hover img {
+
+-webkit-box-shadow: 0px 6px 72px -11px rgba(220,59,62,1);
+-moz-box-shadow: 0px 6px 72px -11px rgba(220,59,62,1);
+box-shadow: 0px 6px 72px -11px rgba(220,59,62,1);
+
+}
+
+
+@media (min-width: 992px) {
+  .col-md-6 {
+    width: 46%;
+    margin: 15px 2%;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .col-md-6 {
+   margin-bottom: 25px;
+  }
+
+}
+
+
+.WordLove:hover {
+        pointer: cursor;
+}
+
+.WordLove {
+    text-align: center;
+}
+
+.WordLove > p {
+    display: none;
+}
+
+.WordLove .img-responsive {
+  width: 100%;
+}
+
+
+.WordLove .share {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    margin: 0;
+    margin-top: -25px;
+    padding: 0;
+    display: none;
+}
+
+.WordLove .share h3 {
+    color: #FFFFFF;
+    width: 100px;
+    height: 80px;
+    margin: 0;
+    padding-top: 42px;
+    position: absolute;
+    vertical-align: middle;
+    font-size: 19px;
+    
+}
+
+.WordLove .fontawesome-heart {
+    position: absolute;
+    font-size: 100px;
+    top: 0;
+    left:  0;
+    color: rgba(220, 59, 62, 0.95);
+    text-shadow: 1px 2px 6px rgba(247, 233, 233, 0.75);
+}
+.WordLove.Last {
+    margin:  0 25%;
+}
+
+@media only screen 
+and (orientation: portrait) {
+
+		.WordLove.Last   {
+
+	   margin: 0;
+	   
+	    }
+
+}
+
+#show_Card {
+background: url("../img/modal_bg.png") repeat bottom center;
+
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+	
+	#show_Card  .modal-dialog  {
+	    width:758px;
+	    margin: 0 auto !important;
+	   /* margin-top: 1.5%;*/
+	    }
+
+}
+
+@media only screen 
+and (orientation: portrait) {
+
+		#show_Card  .modal-dialog  {
+
+	   /* margin-top: 25%;*/
+	    }
+
+}
+
+
+#show_Card .modal-dialog ul {
+    list-style: none;
+}
+
+
+
+#show_Card .modal-dialog .modal-header {
+	min-height: 40px;
+	border: none;
+}
+
+#show_Card .modal-dialog .modal-header .close {
+    margin-top: -10px;
+    font-size: 30px;
+}
+
+#show_Card .modal-dialog .modal-body {
+    text-align: center;
+    min-height: 300px;
+}
+
+#show_Card .modal-dialog img {
+    display: inline-block;
+    text-align: center;
+    position: static;
+        -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+	    border-bottom: 1px solid #DDD;
+    border-top: 1px solid #DDD;
+}
+
+.circle {
+     border-radius: 50%;/* Safari 3-4, iOS 1-3.2, Android 1.6- */
+        -webkit-border-radius: 50%;/* Firefox 1-3.6 */
+        -moz-border-radius: 50%;  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+
+}
+
+.social {
+  display: block;
+  list-style: none;
+
+}
+
+#show_Card .modal-body {
+    padding: 2px;
+}
+
+#show_Card .modal-body .social {
+  position: relative;
+  display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.social li {
+  display: block;
+  float: left;
+  padding: 0px 3px 0 3px; 
+
+}
+
+.social a {
+  display: block;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  
+  color: #FFFFFF;
+}
+
+.social a.twit {
+    background-color: #77CCF1;
+}
+
+.social a.fb {
+    background-color: #547BBF;
+}
+
+.social a.mail {
+    background-color: #ee7089;
+}
+
+.social a.pin {
+    background-color: #C92228;
+}
+
+
+.social a:hover {
+  text-decoration: none;
+  background-color: #DDDDDD;
+}
+
+#MailForm {
+    min-height: 40%;
+    width: 40%;
+    position: absolute;
+    top: 20%;
+    left:0;
+    margin:  0 30%;
+    background: #F5F5F5;
+     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+    padding-bottom: 5px;
+    display: none;
+}
+
+@media only screen 
+and (orientation: portrait) {
+    #MailForm  {
+	top: 5%;
+	width: 80%;
+	margin: 0 10%;
+    }
+    
+    #MailForm #message {
+    height: 70px;
+}
+}
+
+
+#MailForm .close {
+    padding: 3px 10px;
+    
+}
+
+#MailForm #contactForm {
+  margin: 25px 15px 5px;
+    
+}
+
+#MailForm #message {
+    height: 85px;
+
+}
+
+#MailForm .btn-primary {
+    background-color: #ffeded;
+    border-color: #ee7089 ;
+    color: #000;
+}
+
+#MailForm .btn-primary:hover {
+    background-color: #ee7089;
+    color: #FFF;
+}
+
+#MailForm  .help-block ul {
+    padding-left:  0;
+}
+
+
+.cardpagepic img {
+        margin: 0 auto;
+}
+
